@@ -1,13 +1,54 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Sometype+Mono:wght@400;700&display=swap");
+
+:root {
+  --black: #0d0d00;
+  --white: #f3f3f3;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  font-family: "Sometype Mono", monospace;
+  margin: 0;
+  color: var(--black);
+  text-decoration: none;
+}
+
+body {
+  background-color: var(--white);
+}
+
+.navbar {
+  padding: 0.5rem 2rem;
+  margin: 0.5rem auto;
+  max-width: 60rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid var(--black);
+}
+
+.navbar .links a {
+  color: var(--black);
+  margin-left: 1rem;
+  text-decoration: none;
+}
+
+.content {
+  padding: 2rem;
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+.blog-preview {
+  padding: 1rem;
+  margin: 0.5rem 0;
+  max-width: 20rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border: 1px solid var(--black);
+}
+
+.blog-preview:hover {
+  box-shadow: 0.4rem 0.4rem var(--black);
+  margin: 2rem;
 }
